@@ -1,5 +1,5 @@
 #include <WiFi.h>
-#include "PubSubClient.h"
+#include <PubSubClient.h>
 
 const int sensorPin = 2; // Pino GPIO 2 conectado ao OUT do sensor
 const int ledPin = 5;    // Pino GPIO 5 conectado ao LED
@@ -8,6 +8,8 @@ const char* ssid = "REDEWIFI";
 const char* password = "SENHAWIFI";
 const char* mqttServer = "18.228.117.52";
 const int port = 1883;
+const char* mqttUser = "grupo01";       // Adicione seu usuário MQTT
+const char* mqttPassword = "grupo01";    // Adicione sua senha MQTT
 
 char clientId[50];
 WiFiClient espClient;
@@ -53,7 +55,7 @@ void mqttReconnect() {
     Serial.print("Tentando conectar ao MQTT...");
     long r = random(1000);
     sprintf(clientId, "clientId-%ld", r);
-    if (client.connect(clientId)) {
+    if (client.connect(clientId, mqttUser, mqttPassword)) { // Inclui usuário e senha
       Serial.print("Conectado com ID: ");
       Serial.println(clientId);
       client.subscribe("teste/topico");
