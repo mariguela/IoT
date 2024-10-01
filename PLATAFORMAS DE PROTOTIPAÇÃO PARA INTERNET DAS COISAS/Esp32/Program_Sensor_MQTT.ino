@@ -1,5 +1,5 @@
 #include <WiFi.h>
-#include "PubSubClient.h"
+#include <PubSubClient.h>
 
 const int sensorPin = 2;  // Pino GPIO 2 conectado ao OUT do sensor
 const int ledPin = 5;     // Pino GPIO 5 conectado ao LED
