@@ -8,8 +8,8 @@ const char* ssid = "REDEWIFI";
 const char* password = "SENHAWIFI";
 const char* mqttServer = "18.228.117.52";
 const int port = 1883;
-const char* mqttUser = "SEU_USUARIO_MQTT";    // Adicione seu usuário MQTT
-const char* mqttPassword = "SUA_SENHA_MQTT";  // Adicione sua senha MQTT
+const char* mqttUser = "grupo01";    // Adicione seu usuário MQTT
+const char* mqttPassword = "grupo01";  // Adicione sua senha MQTT
 
 char clientId[50];
 WiFiClient espClient;
@@ -86,11 +86,11 @@ void loop() {
 
     if (sensorValue == HIGH) {
       Serial.println("Movimento detectado!");
-      digitalWrite(ledPin, HIGH);               // Liga o LED quando detectar movimento
+      //digitalWrite(ledPin, HIGH);               // Liga o LED quando detectar movimento
       client.publish("sensor/movimento", "1");  // Publica "1" no tópico
     } else {
       Serial.println("Sem movimento...");
-      digitalWrite(ledPin, LOW);                // Desliga o LED quando não detectar movimento
+      //digitalWrite(ledPin, LOW);                // Desliga o LED quando não detectar movimento
       client.publish("sensor/movimento", "0");  // Publica "0" no tópico
     }
   }
