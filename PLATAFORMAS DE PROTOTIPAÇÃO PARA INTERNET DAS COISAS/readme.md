@@ -7,7 +7,8 @@ Para armazenar o historico do sensor, utilizamos um banco de dados MySql.
 
 <h3>Simulação Wokwi</h3>
 https://wokwi.com/projects/410862935651732481
-![image](https://github.com/user-attachments/assets/bdbc59e2-5592-43cf-8f75-990cabea23b8)
+![image](https://github.com/user-attachments/assets/eeca3246-a096-444f-b9c5-112c2fdca6c8)
+
 
 
 <h3>NodeRed</h3>
