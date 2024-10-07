@@ -1,6 +1,10 @@
 <h1>Criação de um IoT para capturar movimentos e enviar via MQTT no node-red.</h1>
 
 
+Simulação Wokwi
+https://wokwi.com/projects/410862935651732481
+
+
 Link NodeRed
 http://18.228.117.52:1880/#flow/7c73a53ef8e5a4e3
 
