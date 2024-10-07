@@ -16,14 +16,11 @@ https://wokwi.com/projects/410862935651732481
 http://18.228.117.52:1880/#flow/7c73a53ef8e5a4e3
 http://18.228.117.52:1880/ui
 
+Senso parado
+mosquitto_pub -h 18.228.117.52 -t "sensor/movimento" -m "0" -u "USER" -P "PASS"
+![image](https://github.com/user-attachments/assets/27a0defc-619d-49f4-b637-377c00fb57bf)
+
 Sensor em movimento
 mosquitto_pub -h 18.228.117.52 -t "sensor/movimento" -m "1" -u "USER" -P "PASS"
-
-![image](https://github.com/user-attachments/assets/ea05d312-6598-47f9-8ff1-750175bb4996)
-
-
-Sensor parado
-mosquitto_pub -h 18.228.117.52 -t "sensor/movimento" -m "0" -u "USER" -P "PASS"
-
-![image](https://github.com/user-attachments/assets/8a451ece-3a03-4552-8812-a3bac84b08bc)
+![image](https://github.com/user-attachments/assets/8b40baa3-27c4-46e8-a425-87e56749128b)
 
