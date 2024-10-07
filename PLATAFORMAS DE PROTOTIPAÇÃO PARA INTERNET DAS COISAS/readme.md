@@ -1,14 +1,18 @@
-<h1>Criação de um IoT para capturar movimentos e enviar via MQTT no node-red.</h1>
+<h1>EPIoT</h1>
+<h2>IoT para controle de uso de EPIs em um ambiente organizacional seguro</h1>
+Utilizamos ESP32 e um sensor de movimento onde detectamos se está em movimento (em uso) ou parado (sem uso) determinado EPI. 
+O protocolo utilizado é o MQTT. 
+Para armazenar o historico do sensor, utilizamos um banco de dados MySql.
 
 
-Simulação Wokwi
+<h3>Simulação Wokwi</h3>
 https://wokwi.com/projects/410862935651732481
+![image](https://github.com/user-attachments/assets/bdbc59e2-5592-43cf-8f75-990cabea23b8)
 
 
-Link NodeRed
+<h3>NodeRed</h3>
 http://18.228.117.52:1880/#flow/7c73a53ef8e5a4e3
-
-http://18.228.117.52:1880/ui/#!/0?socketid=4lFPzb4rPUsNemY8AAAA
+http://18.228.117.52:1880/ui
 
 Sensor em movimento
 mosquitto_pub -h 18.228.117.52 -t "sensor/movimento" -m "1" -u "USER" -P "PASS"
